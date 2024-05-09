@@ -5,3 +5,7 @@ interface Meme {
   interface Props {
     meme: Meme | null;
 }
+interface FacebookShareButtonProps {
+  url: string | undefined;
+  quote: string;
+}

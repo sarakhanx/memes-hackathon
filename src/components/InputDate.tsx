@@ -10,6 +10,7 @@ const InputDate: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log("Started Getting Quote");
     if (!selectedDay) return;
     const memeOnDate = memes.find((meme) => meme.id === selectedDay);
     if(memeOnDate) {
@@ -51,11 +52,6 @@ const InputDate: React.FC = () => {
     </div>
     <div className="flex flex-col justify-center">
         <ImageComponent meme={meme}/>
-    {/* {meme ? (
-        <div>
-            {meme?.meme}
-        </div>
-      ):(null)} */}
     </div>
             </>
   );
