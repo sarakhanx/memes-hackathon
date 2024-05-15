@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://quote.amplication.live'),
   title: "Programmer memes",
   description: "inspired by www.nasa.gov/content/goddard/what-did-hubble-see-on-your-birthday",
   openGraph: {
